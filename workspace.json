@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "daohaus-main": "apps/daohaus-main",
-    "daohaus-ui": "libs/daohaus-ui"
+    "daohaus-ui": "libs/daohaus-ui",
+    "haus-price": "apps/haus-price"
   }
 }
