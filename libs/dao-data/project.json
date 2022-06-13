@@ -1,28 +1,38 @@
 {
-  "root": "libs/dao-data",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/dao-data/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/dao-data",
         "main": "libs/dao-data/src/index.ts",
         "tsConfig": "libs/dao-data/tsconfig.lib.json",
-        "assets": ["libs/dao-data/*.md"]
+        "assets": [
+          "libs/dao-data/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/dao-data/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/dao-data/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/dao-data"],
+      "outputs": [
+        "coverage/libs/dao-data"
+      ],
       "options": {
         "jestConfig": "libs/dao-data/jest.config.ts",
         "passWithNoTests": true

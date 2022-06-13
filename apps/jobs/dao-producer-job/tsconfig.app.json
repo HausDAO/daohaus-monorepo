@@ -1,9 +1,12 @@
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "../../../dist/out-tsc",
-    "module": "commonjs",
-    "types": ["node"]
+  "compileroptions": {
+    "outdir": "../../../dist/out-tsc",
+    "lib": ["es2022"], // es2020 in earlier versions
+    "module": "es2022", //esnext
+    "moduleresolution": "node",
+    "target": "es2022", // es2020 in earlier versions
+    "esmoduleinterop": true
   },
   "exclude": ["jest.config.ts", "**/*.spec.ts", "**/*.test.ts"],
   "include": ["**/*.ts"]

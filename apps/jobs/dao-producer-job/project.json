@@ -4,32 +4,19 @@
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/jobs/dao-producer-job",
         "main": "apps/jobs/dao-producer-job/src/main.ts",
         "tsConfig": "apps/jobs/dao-producer-job/tsconfig.app.json",
-        "assets": ["apps/jobs/dao-producer-job/src/assets"]
-      },
-      "configurations": {
-        "production": {
-          "optimization": true,
-          "extractLicenses": true,
-          "inspect": false,
-          "fileReplacements": [
-            {
-              "replace": "apps/jobs/dao-producer-job/src/environments/environment.ts",
-              "with": "apps/jobs/dao-producer-job/src/environments/environment.prod.ts"
-            }
-          ]
-        }
+        "assets": []
       }
     },
     "serve": {
-      "executor": "@nrwl/node:node",
+      "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "buildTarget": "jobs-dao-producer-job:build"
+        "command": "ts-node --project ./apps/jobs/dao-producer-job/tsconfig.app.json ./apps/jobs/dao-producer-job/src/main.ts"
       }
     },
     "lint": {

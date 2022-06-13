@@ -1,5 +1,5 @@
 {
-  "root": "apps/v3-subgraph",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/v3-subgraph/src",
   "projectType": "application",
   "targets": {
@@ -53,7 +53,10 @@
     "generate-code": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["graph codegen", "graph build"],
+        "commands": [
+          "graph codegen",
+          "graph build"
+        ],
         "cwd": "apps/v3-subgraph",
         "parallel": false
       }

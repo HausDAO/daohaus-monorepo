@@ -7,11 +7,13 @@
     "dao-data": "libs/dao-data",
     "daohaus-connect-feature": "libs/daohaus-connect-feature",
     "hub-app": "apps/hub-app",
-    "infra-chart-daohaus": "libs/infra-chart/daohaus",
     "infra-chart-ceramic": "libs/infra-chart/ceramic",
+    "infra-chart-daohaus": "libs/infra-chart/daohaus",
     "infra-chart-ipfs": "libs/infra-chart/ipfs",
+    "jobs-dao-producer-job": "apps/jobs/dao-producer-job",
     "summon-app": "apps/summon-app",
     "ui": "libs/ui",
     "v3-subgraph": "apps/v3-subgraph"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
