@@ -13,6 +13,31 @@
         "assets": []
       }
     },
+    "bu": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/dao-producer-job",
+        "main": "apps/jobs/dao-producer-job/src/main.ts",
+        "tsConfig": "apps/jobs/dao-producer-job/tsconfig.app.json",
+        "assets": [],
+        "generatePackageJson": true
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": []
+        }
+      }
+    },
+    "se": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "jobs-dao-producer-job:build"
+      }
+    },
     "serve": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
