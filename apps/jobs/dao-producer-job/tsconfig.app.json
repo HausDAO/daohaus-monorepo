@@ -1,13 +1,11 @@
 {
   "extends": "./tsconfig.json",
-  "compileroptions": {
-    "outdir": "../../../dist/out-tsc",
-    "lib": ["es2022"], // es2020 in earlier versions
-    "module": "es2022", //esnext
-    "moduleresolution": "node",
-    "target": "es2022", // es2020 in earlier versions
-    "esmoduleinterop": true
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "module": "nodenext",
+    "types": ["node"]
   },
-  "exclude": ["jest.config.ts", "**/*.spec.ts", "**/*.test.ts"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"],
   "include": ["**/*.ts"]
 }
