@@ -40,6 +40,13 @@
         "command": "graphql-codegen --config libs/dao-data/codegen.yaml",
         "outputPath": "libs/dao-data/src/subgraph/queries"
       }
+    },
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "buildTarget": "production"
+      }
     }
   },
   "tags": []

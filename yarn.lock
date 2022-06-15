@@ -3000,6 +3000,17 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
+"@nrwl/devkit@14.3.2":
+  version "14.3.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-14.3.2.tgz#37a22b5217e5ec7a38747a101ba1bdb6f598ef09"
+  integrity sha512-nbPaFdZxmCUf6qLg8vtjibEW57CdrELHB0TMbhcO04zfY+HV9ij9yRGgpPd69Ipn/hRVWP4IcfJc6nRsYji0dg==
+  dependencies:
+    ejs "^3.1.7"
+    ignore "^5.0.4"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tslib "^2.3.0"
+
 "@nrwl/eslint-plugin-nx@13.7.3":
   version "13.7.3"
   resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-13.7.3.tgz#797b088ba0b0729ef0ed1e8576109637f9e3242b"
@@ -15577,6 +15588,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
+
+ngx-deploy-npm@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/ngx-deploy-npm/-/ngx-deploy-npm-4.0.3.tgz#6626442388537bba3e7035f2017dd45dc882335d"
+  integrity sha512-J8nBo21mvrF9XSjhFWb+GihdF7sDc7GzgehmkleqcexVGYLseiH9DvIjix9NbRbs5jqJ5GOR/BdOhtH4EYJ6SQ==
+  dependencies:
+    "@nrwl/devkit" "14.3.2"
 
 nice-try@^1.0.4:
   version "1.0.5"

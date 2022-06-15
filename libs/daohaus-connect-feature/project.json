@@ -30,6 +30,15 @@
         "jestConfig": "libs/daohaus-connect-feature/jest.config.js",
         "passWithNoTests": true
       }
+    },
+	{
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "buildTarget": "production"
+      }
     }
+
   }
 }

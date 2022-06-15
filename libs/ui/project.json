@@ -44,6 +44,13 @@
         }
       }
     },
+    "deploy": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "buildTarget": "production"
+      }
+    },
     "build-storybook": {
       "executor": "@nrwl/storybook:build",
       "outputs": ["{options.outputPath}"],
