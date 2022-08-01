@@ -86,12 +86,6 @@
         "portalUrl": "https://skynetfree.net",
         "skynetJwtVarName": "SKYNET_JWT"
       }
-    },
-    "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "preset": "conventional"
-      }
     }
   },
   "tags": []
