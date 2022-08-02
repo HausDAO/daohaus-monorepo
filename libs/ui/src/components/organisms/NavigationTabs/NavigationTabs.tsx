@@ -87,7 +87,7 @@ export const NavigationTabs = (props: NavigationTabsProps) => {
         </div>
       ) : (
         <div className="nav-link-list">
-          {navLinks.map((link) => {
+          {/* {navLinks.map((link) => {
             const selected = location.pathname.includes(link.href);
             return (
               <NavLink key={link.label} href={link.href} selected={selected}>
@@ -122,7 +122,7 @@ export const NavigationTabs = (props: NavigationTabsProps) => {
                 };
               })}
             />
-          )}
+          )} */}
         </div>
       )}
     </NavigationTabsContainer>
