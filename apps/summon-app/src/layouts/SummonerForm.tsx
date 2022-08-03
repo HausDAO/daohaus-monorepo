@@ -7,7 +7,7 @@ import {
   isValidNetwork,
   ReactSetter,
 } from '@daohaus/common-utilities';
-import { LOCAL_ABI } from '@daohaus/abi-utilities';
+import { BAAL_SUMMONER_ABI } from '@daohaus/contract-utilities';
 import {
   Bold,
   Button,
@@ -68,7 +68,7 @@ export const SummonerForm = ({
 
       fireTransaction({
         txName: 'summonBaalAndSafe',
-        abi: LOCAL_ABI.BAAL_SUMMONER,
+        abi: BAAL_SUMMONER_ABI,
         args: args,
         keychain: CONTRACTS.V3_FACTORY,
         lifeCycleFns: {
